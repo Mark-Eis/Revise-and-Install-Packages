@@ -1,0 +1,251 @@
+
+R version 4.3.2 (2023-10-31) -- "Eye Holes"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+	R on Mark's MacBook Pro JD2WRQ2WJ6 using libraries at paths: -
+		
+	/Users/frzmce/Library/R/arm64/4.3/library
+	/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library
+	
+	Edit .Rprofile with usethis::edit_r_profile()
+
+[R.app GUI 1.80 (8281) aarch64-apple-darwin20]
+
+[Workspace restored from /Users/frzmce/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/R/.RData]
+[History restored from /Users/frzmce/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/R/.Rapp.history]
+
+> source("/Users/frzmce/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/R/Packages/Revise and Install Packages/Revise and Install ParaAnita Package.R")
+✔ Setting active project to '/Users/frzmce/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/R/Packages/ParaAnita'
+• Refer to functions with `broom::fun()`
+• Refer to functions with `dplyr::fun()`
+• Refer to functions with `ggplot2::fun()`
+• Refer to functions with `forcats::fun()`
+• Refer to functions with `purrr::fun()`
+• Refer to functions with `rlang::fun()`
+• Refer to functions with `stats::fun()`
+• Refer to functions with `stringr::fun()`
+• Refer to functions with `tidyr::fun()`
+• Refer to functions with `tidyselect::fun()`
+• Document a returned tibble like so:
+  #' @return a [tibble][tibble::tibble-package]
+Overwrite pre-existing file '_pkgdown.yml'?
+
+1: Absolutely not
+2: Absolutely
+3: No way
+
+Selection: 1
+✔ Leaving '_pkgdown.yml' unchanged
+• Modify '_pkgdown.yml'
+✔ GitHub Pages is publishing from:
+• URL: 'https://mark-eis.github.io/ParaAnita/'
+• Branch: 'gh-pages'
+• Path: '/'
+✔ Saving 'r-lib/actions/examples/pkgdown.yaml@v2' to '.github/workflows/pkgdown.yaml'
+• Learn more at <https://github.com/r-lib/actions/blob/v2/examples/README.md>.
+✔ Recording 'https://mark-eis.github.io/ParaAnita/' as site's url in '_pkgdown.yml'
+✔ Adding 'https://mark-eis.github.io/ParaAnita/' to URL field in DESCRIPTION
+• Run `devtools::document()` to update package-level documentation.
+ℹ Updating ParaAnita documentation
+ℹ Loading ParaAnita
+Writing 'glm_plotdata.Rd'
+These packages have more recent versions available.
+It is recommended to update all of them.
+Which would you like to update?
+
+1: All                          
+2: CRAN packages only           
+3: None                         
+4: tidyr (1.3.0 -> 1.3.1) [CRAN]
+
+Enter one or more numbers, or an empty line to skip updates: 
+── R CMD build ────────────────────────────────────────────────────────────────────────────────────────────────────
+✔  checking for file ‘/Users/frzmce/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/R/Packages/ParaAnita/DESCRIPTION’ ...
+─  preparing ‘ParaAnita’: (1s)
+✔  checking DESCRIPTION meta-information ... preparing ‘ParaAnita’: (1s)
+Running /Library/Frameworks/R.framework/Resources/bin/R CMD INSTALL \
+  /var/folders/zw/mq2s6h5s4r3cxfrmq43dq0dc0000gq/T//RtmpxBzBZB/ParaAnita_1.0.0.00011.tar.gz --install-tests 
+* installing to library ‘/Users/frzmce/Library/R/arm64/4.3/library’
+* installing *source* package ‘ParaAnita’ ...
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ParaAnita)
+
+
+=====================
+sessionInfo()
+
+R version 4.3.2 (2023-10-31)
+Platform: aarch64-apple-darwin20 (64-bit)
+Running under: macOS Sonoma 14.2.1
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRblas.0.dylib 
+LAPACK: /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+time zone: Europe/London
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] ParaAnita_1.0.0.00011 roxygen2_7.2.3        devtools_2.4.5        usethis_2.1.6        
+
+loaded via a namespace (and not attached):
+ [1] gtable_0.3.4       httr2_0.2.3        xfun_0.41          ggplot2_3.4.4      htmlwidgets_1.6.2 
+ [6] remotes_2.4.2      gh_1.4.0           processx_3.8.3     callr_3.7.3        vctrs_0.6.5       
+[11] tools_4.3.2        ps_1.7.5           generics_0.1.3     curl_5.2.0         tibble_3.2.1      
+[16] fansi_1.0.6        pkgconfig_2.0.3    desc_1.4.3         lifecycle_1.0.4    compiler_4.3.2    
+[21] stringr_1.5.1      brio_1.1.4         credentials_1.3.2  munsell_0.5.0      httpuv_1.6.11     
+[26] htmltools_0.5.7    sys_3.4.2          yaml_2.3.8         pkgdown_2.0.7.9000 later_1.3.1       
+[31] pillar_1.9.0       crayon_1.5.2       urlchecker_1.0.1   whisker_0.4.1      tidyr_1.3.0       
+[36] ellipsis_0.3.2     openssl_2.1.1      cachem_1.0.8       sessioninfo_1.2.2  mime_0.12         
+[41] commonmark_1.9.0   tidyselect_1.2.0   digest_0.6.33      stringi_1.8.3      dplyr_1.1.4       
+[46] purrr_1.0.2        forcats_1.0.0      rprojroot_2.0.3    fastmap_1.1.1      grid_4.3.2        
+[51] colorspace_2.1-0   cli_3.6.2          magrittr_2.0.3     pkgbuild_1.4.0     utf8_1.2.4        
+[56] broom_1.0.5        withr_3.0.0        rappdirs_0.3.3     prettyunits_1.1.1  scales_1.3.0      
+[61] promises_1.2.0.1   backports_1.4.1    gitcreds_0.1.2     askpass_1.2.0      memoise_2.0.1     
+[66] shiny_1.7.4        knitr_1.45         testthat_3.1.8     miniUI_0.1.1.1     profvis_0.3.8     
+[71] rlang_1.1.3        gert_1.9.2         Rcpp_1.0.10        xtable_1.8-4       glue_1.7.0        
+[76] xml2_1.3.6         pkgload_1.3.2      rstudioapi_0.14    jsonlite_1.8.8     R6_2.5.1          
+[81] fs_1.6.3          
+
+
+=====================
+search()
+
+ [1] ".GlobalEnv"        "package:ParaAnita" "devtools_shims"    "package:roxygen2"  "tools:RGUI"       
+ [6] "package:stats"     "package:graphics"  "package:grDevices" "package:utils"     "package:datasets" 
+[11] "package:devtools"  "package:usethis"   "package:methods"   "Autoloads"         "package:base"     
+
+
+=====================
+citation()
+
+To cite package ‘ParaAnita’ in publications use:
+
+  Eisler M (2024). _ParaAnita: Functions for Binary and Binomial Data Analysis_. R package version
+  1.0.0.00011, <https://mark-eis.github.io/ParaAnita/>.
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {ParaAnita: Functions for Binary and Binomial Data Analysis},
+    author = {Mark Eisler},
+    year = {2024},
+    note = {R package version 1.0.0.00011},
+    url = {https://mark-eis.github.io/ParaAnita/},
+  }
+starting httpd help server ... done
+Error: Start tag expected, '<' not found [4]
+Error: Start tag expected, '<' not found [4]
+Error: Start tag expected, '<' not found [4]
+Error: Start tag expected, '<' not found [4]
+Error: Start tag expected, '<' not found [4]
+Error: Start tag expected, '<' not found [4]
+Error: Start tag expected, '<' not found [4]
+Error: Start tag expected, '<' not found [4]
+nning /Library/Frameworks/R.framework/Resources/bin/R CMD INSTALL \
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> c(
++         c("Year", paste("Year Group", seq_along(ygps[-1]))) |> set_names(ygps),
++         c("Month", "Season", paste("Month Group", seq_along(mgps[-1])[-1])) |> set_names(mgps),
++         c("Animal Gender", "Age Group", "Geographic Location", "Cattle Breed") |> set_names(demog)
++     )
+Error: object 'ygps' not found
+> ygps <- c("year", "ygroup1", "ygroup2", "ygroup3", "ygroup4", "ygroup5", "ygroup6", "ygroup7")
+> mgps <- c("month", "season", "mgroup2", "mgroup3", "mgroup4", "mgroup5", "mgroup6")
+> demog <- c("gender", "age_group", "location", "breed")
+> 
+> c(
++         c("Year", paste("Year Group", seq_along(ygps[-1]))) |> set_names(ygps),
++         c("Month", "Season", paste("Month Group", seq_along(mgps[-1])[-1])) |> set_names(mgps),
++         c("Animal Gender", "Age Group", "Geographic Location", "Cattle Breed") |> set_names(demog)
++     )
+                 year               ygroup1               ygroup2               ygroup3               ygroup4 
+               "Year"        "Year Group 1"        "Year Group 2"        "Year Group 3"        "Year Group 4" 
+              ygroup5               ygroup6               ygroup7                 month                season 
+       "Year Group 5"        "Year Group 6"        "Year Group 7"               "Month"              "Season" 
+              mgroup2               mgroup3               mgroup4               mgroup5               mgroup6 
+      "Month Group 2"       "Month Group 3"       "Month Group 4"       "Month Group 5"       "Month Group 6" 
+               gender             age_group              location                 breed 
+      "Animal Gender"           "Age Group" "Geographic Location"        "Cattle Breed" 
+> c(
++         c("Year", paste("Year Group", seq_along(ygps[-1]))) |> set_names(ygps),
++         c("Month", "Season", paste("Month Group", seq_along(mgps[-1])[-1])) |> set_names(mgps),
++         c("Animal Gender", "Age Group", "Geographic Location", "Cattle Breed") |> set_names(demog)
++     ) |> str()
+ Named chr [1:19] "Year" "Year Group 1" "Year Group 2" "Year Group 3" "Year Group 4" "Year Group 5" ...
+ - attr(*, "names")= chr [1:19] "year" "ygroup1" "ygroup2" "ygroup3" ...
+> c(`Ungrouped Risk Factor` = iv,`Grouped Risk Factor` = iv2)
+Error: object 'iv' not found
+> c(`Ungrouped Risk Factor` = "iv",`Grouped Risk Factor` = "iv2")
+Ungrouped Risk Factor   Grouped Risk Factor 
+                 "iv"                 "iv2" 
+> as_labeller(c(`Ungrouped Risk Factor` = "iv",`Grouped Risk Factor` = "iv2"))
+function (labels) 
+{
+    labels <- lapply(labels, as.character)
+    default <- dispatch_args(default, multi_line = multi_line)
+    if (is_labeller(x)) {
+        x <- dispatch_args(x, multi_line = multi_line)
+        x(labels)
+    }
+    else if (is.function(x)) {
+        default(lapply(labels, x))
+    }
+    else if (is.formula(x)) {
+        default(lapply(labels, as_function(x)))
+    }
+    else if (is.character(x)) {
+        default(lapply(labels, function(label) x[label]))
+    }
+    else {
+        default(labels)
+    }
+}
+<bytecode: 0x131460860>
+<environment: 0x17683a390>
+attr(,"class")
+[1] "labeller"
+> var_labs <- as_labeller(c(`Ungrouped Risk Factor` = "iv",`Grouped Risk Factor` = "iv2"))
+> var_labs(iv)
+Error: object 'iv' not found
+> var_labs("iv")
+[[1]]
+[1] NA
+
+> c(iv = "Ungrouped Risk Factor",iv2 = "Grouped Risk Factor")
