@@ -44,6 +44,7 @@ use_import_from("ggplot2",
                    "geom_point", "geom_text", "ggplot", "labs", "labeller", "margin", "scale_y_continuous",
                    "scale_y_reverse", "theme", "theme_get", "theme_set", "theme_update")
                )
+use_import_from("methods", c("is"))
 use_import_from("purrr",
                 c("list_rbind", "list_transpose", "imap", "map", "map2", "map_chr", "map2_chr", "map_dbl", "map_int",
                    "map_lgl", "walk")
