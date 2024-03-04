@@ -11,7 +11,7 @@ pkg_path <- function(priority = FALSE) {
 ## _______________
 ## Before update
 .libPaths()
-.Library		## NB /Library/Frameworks/R.framework/Resources is a shortcut, probably same place as .libPaths()[[2]]
+.Library        ## NB /Library/Frameworks/R.framework/Resources is a shortcut, probably same place as .libPaths()[[2]]
 .Library.site
 
 setwd("/Users/frzmce/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/R/Packages/Installed")
@@ -26,15 +26,15 @@ lapply(packages, \(x) {dimnames(x)[1] <- list(NULL); x})  ## each package name o
 # Save package names with priority
 if (menu(c("Save", "Cancel"), title = "Save package names?") == 1) {
     saveRDS(pkg_path(TRUE), file = "Rpackages")
-	cat("Rpackages saved")
-} else	
-	cat("Not saved")
+    cat("Rpackages saved")
+} else
+    cat("Not saved")
 
 
 ## ______________
 ## After update
 .libPaths()
-.Library		## NB /Library/Frameworks/R.framework/Resources is a shortcut, probably same place as .libPaths()[[2]]
+.Library        ## NB /Library/Frameworks/R.framework/Resources is a shortcut, probably same place as .libPaths()[[2]]
 .Library.site
 
 # Previously installed packages
@@ -45,7 +45,7 @@ old_packages <- readRDS("Rpackages")
 # old_packages <- readRDS("Fake_Rpackages")
 (names(old_packages) <- attr(old_packages, "libPaths"))
 lapply(old_packages, nrow)
-lapply(old_packages, unname)	## each package name only once
+lapply(old_packages, unname)    ## each package name only once
 
 # Compare previously installed package paths to .libPaths()
 attr(old_packages, "libPaths") %in% unlist(.libPaths())
@@ -80,9 +80,9 @@ old_packages[[2]][old_packages[[2]][,"Package"] %in% all_installed,"Package"] |>
 (to_install2 <- old_packages[[2]][!old_packages[[2]][,"Package"] %in% all_installed,"Package"] |> unname())
 
 if (menu(c("Install", "Cancel"), title = "Install missing packages?") == 1) {
-	cat("Installing packages")
+    cat("Installing packages")
     install.packages(c(to_install1, to_install2), dependencies = TRUE)
-} else	
-	cat("Packages not installed")
+} else
+    cat("Packages not installed")
 
 setwd(oldwd)
