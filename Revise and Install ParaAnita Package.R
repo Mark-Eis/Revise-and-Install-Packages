@@ -52,8 +52,8 @@ use_import_from("purrr",
 use_import_from("rlang",
                    c("%@%", "%@%<-", "%|%", "%||%", ":=", ".data", "as_name", "as_string", "call2", "check_dots_empty",
                    "check_dots_unnamed", "check_dots_used", "data_sym", "data_syms", "enexpr", "enexprs", "enquo",
-                   "enquos","eval_tidy", "expr", "exprs", "f_rhs", "inject", "list2", "quo_is_missing", "quos",
-                   "set_names", "sym", "syms")
+                   "enquos","eval_tidy", "expr", "exprs", "f_rhs", "inject", "list2", "quo_get_expr", "quo_is_missing",
+                   "quo_set_expr", "quos", "set_names", "sym", "syms")
                )
 use_import_from("stats",
                    c("AIC", "C", "add1", "anova", "binomial", "chisq.test", "coef", "confint", "contr.helmert",
