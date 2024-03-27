@@ -32,8 +32,8 @@ use_import_from("ggplot2", c("aes", "element_text", "facet_wrap", "geom_histogra
 use_import_from("methods", c("formalArgs"))
 use_import_from("purrr", c("map", "map2_chr", "map_chr", "map_dbl", "map_int", "modify_at", "pmap_lgl"))
 use_import_from("rlang", c("%@%", "%@%<-", "%||%", ":=", "f_rhs<-", ".data", "as_label", "as_name", "check_dots_empty",
-							"data_syms", "enexprs", "enquo", "enquos", "eval_tidy", "expr", "exprs", "f_rhs",
-							"set_names"))
+							"check_dots_used", "data_syms", "enexprs", "enquo", "enquos", "eval_tidy", "expr", "exprs",
+							"f_rhs", "set_names"))
 use_import_from("stats", c("optimise", "pt", "pnorm", "qnorm", "qt", "setNames"))
 use_import_from("stringr", c("boundary", "coll", "fixed", "regex"))
 use_import_from("tibble", c("rownames_to_column"))
