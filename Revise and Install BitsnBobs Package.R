@@ -30,7 +30,8 @@ use_import_from("forcats", c("fct_expand", "fct_relevel", "fct_drop"))
 use_import_from("ggplot2", c("aes", "element_text", "facet_wrap", "geom_histogram", "ggplot", "labs", "margin", "theme",
 							"theme_get", "theme_set", "theme_update"))
 use_import_from("methods", c("formalArgs"))
-use_import_from("purrr", c("map", "map2_chr", "map_chr", "map_dbl", "map_int", "modify_at", "pmap_lgl"))
+use_import_from("purrr", c("map", "map2_chr", "map_chr", "map_dbl", "map_int", "map_lgl", "modify_at", "imap",
+							"pmap_lgl"))
 use_import_from("rlang", c("%@%", "%@%<-", "%||%", ":=", "f_rhs<-", ".data", "as_label", "as_name", "check_dots_empty",
 							"check_dots_used", "data_syms", "enexprs", "enquo", "enquos", "eval_tidy", "expr", "exprs",
 							"f_rhs", "set_names"))
@@ -39,7 +40,7 @@ use_import_from("stringr", c("boundary", "coll", "fixed", "regex"))
 use_import_from("tibble", c("rownames_to_column"))
 use_import_from("tidyselect", c("all_of", "any_of", "contains", "ends_with", "eval_select", "everything", "last_col",
 							"matches", "num_range", "starts_with", "where"))
-use_import_from("utils", c("methods"))
+use_import_from("utils", c("methods", "read.csv"))
 
 starwars2 <- dplyr::starwars |> dplyr::select(name:species) |> 
   tidyr::separate_wider_delim(name, " ", names = c("name", "Surname"), too_few = "align_start", too_many = "merge") |> 
