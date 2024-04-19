@@ -25,7 +25,7 @@ use_package("lobstr", "Suggests")
 use_tibble()
 
 use_import_from("dplyr", c("across", "arrange", "bind_rows", "count", "desc", "if_else", "filter", "group_by", "mutate",
-							"rename_with", "select", "summarise"))
+							"relocate", "rename_with", "select", "summarise"))
 use_import_from("forcats", c("fct_expand", "fct_relevel", "fct_drop"))
 use_import_from("ggplot2", c("aes", "element_text", "facet_wrap", "geom_histogram", "ggplot", "labs", "margin", "theme",
 							"theme_get", "theme_set", "theme_update"))
@@ -34,7 +34,7 @@ use_import_from("purrr", c("map", "map2_chr", "map_chr", "map_dbl", "map_int", "
 							"pmap_lgl"))
 use_import_from("rlang", c("%@%", "%@%<-", "%||%", ":=", "f_rhs<-", ".data", "as_label", "as_name", "check_dots_empty",
 							"check_dots_used", "data_syms", "enexprs", "enquo", "enquos", "eval_tidy", "expr", "exprs",
-							"f_rhs", "set_names"))
+							"f_rhs", "quo_is_null", "set_names"))
 use_import_from("stats", c("optimise", "pt", "pnorm", "qnorm", "qt", "setNames"))
 use_import_from("stringr", c("boundary", "coll", "fixed", "regex"))
 use_import_from("tibble", c("rownames_to_column"))
