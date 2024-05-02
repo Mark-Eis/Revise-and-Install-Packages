@@ -11,10 +11,6 @@ library(devtools)
 library(roxygen2)
 # library(pkgdown)
 
-# Only used once!
-# use_package_doc()
-# use_readme_md()
-
 use_package("broom")
 use_package("dplyr")
 use_package("ggplot2")
@@ -46,7 +42,7 @@ use_import_from("ggplot2",
                )
 use_import_from("methods", c("is"))
 use_import_from("purrr",
-                c("list_rbind", "list_transpose", "imap", "map", "map2", "map_chr", "map2_chr", "map_dbl", "map_int",
+                c("list_rbind", "list_transpose", "imap", "map2", "map_chr", "map2_chr", "map_dbl", "map_int",
                    "map_lgl", "walk")
                )
 use_import_from("rlang",
@@ -86,6 +82,10 @@ use_data(budworm, overwrite = TRUE)
 
 use_mit_license()
 use_tidy_description()
+
+# Only used once!
+# use_package_doc()
+# use_readme_md()
 
 # use_pkgdown()
 use_pkgdown_github_pages()

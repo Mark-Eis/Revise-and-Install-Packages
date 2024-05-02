@@ -1,11 +1,6 @@
 ls()
 rm(list = ls())
 ls()
-getwd()
-# setwd("~")
-# getwd()
-# setwd("/Users/markeisler/Documents/R/Packages/BitsnBobs")
-# setwd("/Users/frzmce/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/R/Packages/BitsnBobs")
 setwd("~/OneDrive - University of Bristol/Documents/R/Packages/BitsnBobs")
 getwd()
 
@@ -30,8 +25,7 @@ use_import_from("forcats", c("fct_expand", "fct_relevel", "fct_drop"))
 use_import_from("ggplot2", c("aes", "element_text", "facet_wrap", "geom_histogram", "ggplot", "labs", "margin", "theme",
 							"theme_get", "theme_set", "theme_update"))
 use_import_from("methods", c("formalArgs"))
-use_import_from("purrr", c("map", "map2_chr", "map_chr", "map_dbl", "map_int", "map_lgl", "modify_at", "imap",
-							"pmap_lgl"))
+use_import_from("purrr", c("map2_chr", "map_chr", "map_dbl", "map_int", "map_lgl", "modify_at", "imap", "pmap_lgl"))
 use_import_from("rlang", c("%@%", "%@%<-", "%||%", ":=", "f_rhs<-", ".data", "as_label", "as_name", "check_dots_empty",
 							"check_dots_used", "data_syms", "enexprs", "enquo", "enquos", "eval_tidy", "expr", "exprs",
 							"f_rhs", "quo_is_null", "set_names"))
