@@ -37,27 +37,28 @@ use_import_from("forcats",
                )
 use_import_from("ggplot2",
                    c("aes", "as_labeller", "element_text", "facet_wrap", "geom_col", "geom_errorbar", "geom_histogram",
-                   "geom_point", "geom_text", "ggplot", "labs", "labeller", "margin", "scale_y_continuous",
+                   "geom_point", "geom_text", "ggplot","labeller",  "labs","margin", "scale_y_continuous",
                    "scale_y_reverse", "theme", "theme_get", "theme_set", "theme_update")
                )
 use_import_from("methods", c("is"))
 use_import_from("purrr",
-                c("list_rbind", "list_transpose", "imap", "map2", "map_chr", "map2_chr", "map_dbl", "map_int",
-                   "map_lgl", "walk")
+                c("imap", "iwalk", "list_rbind", "list_transpose", "map_chr","map_dbl", "map_int", "map_lgl", "map2",
+                  "map2_chr", "walk")
                )
 use_import_from("rlang",
-                   c("%@%", "%@%<-", "%|%", "%||%", ":=", ".data", "as_name", "as_string", "call2", "check_dots_empty",
+                   c(":=", ".data", "%@%", "%@%<-", "%|%", "%||%","as_name", "as_string", "call2", "check_dots_empty",
                    "check_dots_unnamed", "check_dots_used", "data_sym", "data_syms", "enexpr", "enexprs", "enquo",
-                   "enquos","eval_tidy", "expr", "exprs", "f_rhs", "inject", "list2", "quo_get_expr", "quo_is_missing",
-                   "quo_set_expr", "quos", "set_names", "sym", "syms")
+                   "enquos","eval_tidy", "expr", "exprs", "f_rhs", "inject", "list2", "quo", "quo_get_expr",
+                   "quo_is_missing", "quo_is_null", "quo_set_expr", "quos", "set_names", "sym", "syms")
                )
 use_import_from("stats",
-                   c("AIC", "C", "add1", "anova", "binomial", "chisq.test", "coef", "confint", "contr.helmert",
+                   c("add1", "AIC", "anova","binomial", "C", "chisq.test", "coef", "confint", "contr.helmert",
                    "contr.treatment", "contrasts", "contrasts<-", "family", "fisher.test", "formula", "glm", "predict",
                    "prop.test", "pt", "qt", "rbinom", "setNames", "weights")
                )
 use_import_from("stringr",
-                   c("str_detect", "str_locate", "str_split", "str_sub", "str_to_title", "str_trim")
+                   # c("str_detect", "str_locate", "str_split", "str_sub", "str_to_title", "str_trim")
+                   c("str_to_title")
                )
 use_import_from("tibble",
                    c("as_tibble", "column_to_rownames", "is_tibble", "rownames_to_column")
