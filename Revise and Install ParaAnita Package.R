@@ -2,8 +2,6 @@ ls()
 rm(list = ls())
 ls()
 getwd()
-# setwd("/Users/markeisler/Documents/R/Packages/ParaAnita")
-# setwd("/Users/frzmce/Library/CloudStorage/OneDrive-UniversityofBristol/Documents/R/Packages/ParaAnita")
 setwd("~/OneDrive - University of Bristol/Documents/R/Packages/ParaAnita")
 getwd()
 
@@ -21,7 +19,6 @@ use_package("stats")
 use_package("stringr")
 use_package("tidyr")
 use_package("tidyselect")
-# use_package("lobstr", "Suggests")
 
 use_tibble()
 
@@ -40,10 +37,11 @@ use_import_from("ggplot2",
                    "geom_point", "geom_text", "ggplot","labeller",  "labs","margin", "scale_y_continuous",
                    "scale_y_reverse", "theme", "theme_get", "theme_set", "theme_update")
                )
-use_import_from("methods", c("is"))
+use_import_from("methods",
+                   c("is"))
 use_import_from("purrr",
-                c("imap", "iwalk", "list_rbind", "list_transpose", "map_chr","map_dbl", "map_int", "map_lgl", "map2",
-                  "map2_chr", "walk")
+                   c("imap", "iwalk", "list_rbind", "list_transpose", "map_chr","map_dbl", "map_int", "map_lgl", "map2",
+                   "map2_chr", "walk")
                )
 use_import_from("rlang",
                    c(":=", ".data", "%@%", "%@%<-", "%|%", "%||%","as_name", "as_string", "call2", "check_dots_empty",
@@ -57,7 +55,6 @@ use_import_from("stats",
                    "prop.test", "pt", "qt", "rbinom", "setNames", "weights")
                )
 use_import_from("stringr",
-                   # c("str_detect", "str_locate", "str_split", "str_sub", "str_to_title", "str_trim")
                    c("str_to_title")
                )
 use_import_from("tibble",
