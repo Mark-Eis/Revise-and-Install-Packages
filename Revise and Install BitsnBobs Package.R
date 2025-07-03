@@ -66,7 +66,7 @@ use_tidy_description()
 # use_package_doc()
 # use_readme_md()
 
-use_pkgdown_github_pages()
+# use_pkgdown_github_pages()
 # use_article("Using wizard")
 
 document()
