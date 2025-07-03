@@ -13,7 +13,7 @@ list.files()
 # use_version("dev", push = FALSE)  # "major", "minor", "patch", "dev"
 compileAttributes()
 
-data(Blackmore, package = "carData")
+Blackmore <- carData::Blackmore
 rownames(Blackmore) <- seq_len(nrow(Blackmore))
 use_data(Blackmore, overwrite = TRUE)
 
@@ -22,7 +22,7 @@ use_data(Blackmore, overwrite = TRUE)
 
 document()
 roxygen2::roxygenize(roclets="rd")
-pkgdown::build_site()
+# pkgdown::build_site()
 
 setwd("..")
 getwd()
