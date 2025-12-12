@@ -9,6 +9,8 @@ library(devtools)
 library(roxygen2)
 # library(pkgdown)
 
+# use_version("dev", push = FALSE)  # "major", "minor", "patch", "dev"
+
 use_package("broom")
 use_package("dplyr")
 use_package("ggplot2")
@@ -74,9 +76,11 @@ budworm <- data.frame(
 	numdead = c(1, 4, 9, 13, 18, 20, 0, 2, 6, 10, 12, 16),
 	numalive = c(19, 16, 11, 7, 2, 0, 20, 18, 14, 10, 8, 4)
 )
-if (FALSE)
+
+if (FALSE) {
 	use_data_raw("budworm")
-use_data(budworm, overwrite = TRUE)
+	use_data(budworm, overwrite = TRUE)
+}
 
 use_mit_license()
 use_tidy_description()
@@ -84,9 +88,10 @@ use_tidy_description()
 # Only used once!
 # use_package_doc()
 # use_readme_md()
+# use_lifecycle()
 
 # use_pkgdown()
-use_pkgdown_github_pages()
+# use_pkgdown_github_pages()
 
 document()
 # pkgdown::build_site()

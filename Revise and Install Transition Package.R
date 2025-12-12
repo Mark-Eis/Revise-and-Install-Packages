@@ -10,12 +10,12 @@ setwd("~/OneDrive - University of Bristol/Documents/R/Packages/Transition")
 getwd()
 list.files()
 
-# use_version("dev", push = FALSE)  # "major", "minor", "patch", "dev"
+use_version("patch", push = FALSE)  # "major", "minor", "patch", "dev"
 compileAttributes()
 
 Blackmore <- carData::Blackmore
 rownames(Blackmore) <- seq_len(nrow(Blackmore))
-use_data(Blackmore, overwrite = TRUE)
+# use_data(Blackmore, overwrite = TRUE)
 
 
 # use_pkgdown_github_pages()
