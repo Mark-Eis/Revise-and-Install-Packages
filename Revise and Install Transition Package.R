@@ -10,7 +10,7 @@ setwd("~/OneDrive - University of Bristol/Documents/R/Packages/Transition")
 getwd()
 list.files()
 
-use_version("patch", push = FALSE)  # "major", "minor", "patch", "dev"
+use_version("dev", push = FALSE)  # "major", "minor", "patch", "dev"
 compileAttributes()
 
 Blackmore <- carData::Blackmore
