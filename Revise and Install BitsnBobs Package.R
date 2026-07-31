@@ -1,11 +1,14 @@
+library(devtools)
+library(roxygen2)
+
 ls()
 rm(list = ls())
 ls()
 setwd("~/OneDrive - University of Bristol/Documents/R/Packages/BitsnBobs")
 getwd()
+list.files()
 
-library(devtools)
-library(roxygen2)
+# use_version("dev", push = FALSE)  # "major", "minor", "patch", "dev"
 
 use_package("dplyr")
 use_package("FinancialMath", "Suggests")
@@ -41,25 +44,25 @@ starwars2 <- dplyr::starwars |> dplyr::select(name:species) |>
   dplyr::rename(Firstname = name) |> dplyr::filter(!is.na(Surname))
 if (FALSE)
 	use_data_raw("starwars2")
-use_data(starwars2, overwrite = TRUE)
+# use_data(starwars2, overwrite = TRUE)
 
 starwars3 <- dplyr::starwars |> dplyr::select(c(name, skin_color)) |>
   dplyr::arrange(stringr::str_length(skin_color) |> desc()) |> head(10) |> dplyr::arrange(name)
 if (FALSE)
 	use_data_raw("starwars3")
-use_data(starwars3, overwrite = TRUE)
+# use_data(starwars3, overwrite = TRUE)
 
 heights <- rep(c(61, 64, 67, 70, 73), c(5, 18, 42, 27, 8))
 if (FALSE)
 	use_data_raw("heights")
-use_data(heights, overwrite = TRUE)
+# use_data(heights, overwrite = TRUE)
 
 litter_sizes <- rep(1:12, c(7, 33, 58, 116, 125, 126, 121, 107, 56, 37, 25, 4))
 if (FALSE)
 	use_data_raw("litter_sizes")
-use_data(litter_sizes, overwrite = TRUE)
+# use_data(litter_sizes, overwrite = TRUE)
 
-use_mit_license()
+# use_mit_license()
 use_tidy_description()
 
 ## Only used once!
@@ -73,7 +76,7 @@ document()
 # pkgdown::build_site()
 
 setwd("..")
-install("BitsnBobs")
+install("BitsnBobs", build_vignettes = TRUE)
 
 cat("\n\n=====================\nsessionInfo()\n\n")
 sessionInfo() |> print()

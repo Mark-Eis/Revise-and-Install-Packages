@@ -21,7 +21,7 @@ list.files()
 
 # document()
 roxygen2::roxygenize(roclets="rd")
-pkgdown::build_site()
+# pkgdown::build_site()
 
 setwd("..")
 getwd()

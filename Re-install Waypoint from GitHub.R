@@ -2,8 +2,7 @@
 
 remove.packages("Waypoint")
 
-# install.packages("devtools")
-devtools::install_github("Mark-Eis/Waypoint")
+pak::pkg_install("Mark-Eis/Waypoint")
 
 library(Waypoint)
 help(package = "Waypoint")

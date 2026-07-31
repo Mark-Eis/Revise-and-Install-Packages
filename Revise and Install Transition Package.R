@@ -10,7 +10,7 @@ setwd("~/OneDrive - University of Bristol/Documents/R/Packages/Transition")
 getwd()
 list.files()
 
-use_version("dev", push = FALSE)  # "major", "minor", "patch", "dev"
+# use_version("dev", push = FALSE)  # "major", "minor", "patch", "dev"
 compileAttributes()
 
 Blackmore <- carData::Blackmore
@@ -26,7 +26,7 @@ roxygen2::roxygenize(roclets="rd")
 
 setwd("..")
 getwd()
-install("Transition")
+install("Transition", build_vignettes = TRUE)
 
 cat("\n\n=====================\nsessionInfo()\n\n")
 sessionInfo() |> print()
